@@ -88,6 +88,6 @@ document.addEventListener("DOMContentLoaded", () => {
 const botonCompra = document.getElementById('comprar-btn');
 botonCompra.addEventListener('click', () => {
   localStorage.removeItem('carrito');
-    window.location.href = '#id-005'; // Redirige al home ( inicioo)
+     window.location.hash = '#id-005'; // Redirige al home ( inicioo)
   
 });
