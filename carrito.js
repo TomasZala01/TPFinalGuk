@@ -86,10 +86,10 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 const botonCompra = document.getElementById('comprar-btn');
-botonCompra.addEventListener('click', () => {
-  console.log('Carrito antes de eliminar:', localStorage.getItem('carrito'));
-  localStorage.removeItem('carrito');
-  console.log('Carrito después de eliminar:', localStorage.getItem('carrito'));
-  // Redirige al home ( o inicioo)
-  window.location.hash = '#id-005';
+botonCompra?.addEventListener('click', () => {
+  vaciarCarrito();  
+  
+  setTimeout(() => {
+    window.location.hash = '#id-005';  //aca nos manda al inicioo o al home
+  }, 300);
 });
