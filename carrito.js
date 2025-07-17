@@ -87,5 +87,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const botonCompra = document.getElementById('comprar-btn');
 botonCompra.addEventListener('click', () => {
-    window.location.href = window.location.href; // Redirige al home ( inicioo)
+    window.location.href = '#id-005'; // Redirige al home ( inicioo)
 });
