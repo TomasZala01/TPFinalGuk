@@ -430,3 +430,20 @@ agrupas en estilos las clases y lo podes reutilizar para configurarlo*/
     width: 100%;
     height: 100%;
 }
+
+#comprar-btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: var(--color-acento);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+#comprar-btn:hover {
+    background-color: #a56795;
+}
+
