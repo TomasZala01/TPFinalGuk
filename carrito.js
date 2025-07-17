@@ -87,9 +87,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const botonCompra = document.getElementById('comprar-btn');
 botonCompra?.addEventListener('click', () => {
-  vaciarCarrito();  
-  
+  vaciarCarrito(); 
   setTimeout(() => {
-    window.location.hash = '#id-005';  //aca nos manda al inicioo o al home
-  }, 300);
+    window.location.hash = '#id-005';
+  }, 200); // un retraso de ms para darle tiempo al refresh de la website
 });
