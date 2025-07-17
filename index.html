@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <!--Aca en la config del documento, podemos hacer una etiqueta p con las llaves y se le aplica a 
+    a todas las etiquetas p o la etiqueta que requieras, puede ser un h2-->
+    <style>
+        h4{
+            color:blueviolet;
+            font-size: 25px;
+            
+            
+
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    
+    <!--Para darle mas atributos a una etiqueta, dentro de las "" utilizas ; ej:
+    "color:red ; text-align:center"-->
+
+    <!-- Para hacer una comentada universal en cualquier lenguaje apretas = alt + shift + a -->
+
+    <header>
+        <div class="header-contenido">
+          <img src="./Logo.png.jpg" alt="Logo de Guk Indumentaria" class="logo-header">
+          <h1>Guk Indumentaria</h1>
+          <p class="slogan">Tu tienda online favorita 💖</p>
+          <nav>
+            <ul class="Barra-Nav">
+              <li><a href="#id-005">Inicio</a></li>
+              <li><a href="#id-006">Productos</a></li>
+              <li><a href="#Contacto01">Contacto</a></li>
+              <li><a href="#reseñas">Reseñas</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      
+    <!-- Escribir "Lorem" en cualquier parte del html dentro de una etiqueta para ver como va quedando
+     a nivel escructura -->
+
+    <main>
+        <!--SECCION DE BIENVENIDA A LA WEB-->
+        <section id="id-005" class="bienvenida">
+            <div class="bienvenida-contenido">
+              <div class="texto-bienvenida">
+                <h2>¡Bienvenid@ a <span>Guk Indumentaria</span>!</h2>
+                <p>💳 Aceptamos Efectivo, Mercado Pago y Transferencia</p>
+                <p>🌎 Envíos desde Tres de Febrero / San Martín, Buenos Aires</p>
+                <p class="sub-bienvenida">Moda con estilo propio 💫</p>
+              </div>
+              <div class="logo-bienvenida">
+                <img src="./Logo.png.jpg" alt="Logo de la marca">
+              </div>
+            </div>
+          </section>
+          
+        <h2 class="Destacado">Todo en exceso es malo, menos la ROPA!</h2>
+
+    <div id="prendas">
+    <figure>
+        <img src="./Foto de prendas.jpg" alt="Imagen de prendas">
+        <figcaption>
+            Imagen de prendas
+        </figcaption>
+    </figure>
+     </div>
+     
+<!--SECCIÓN PARA PRODUCTOS DE LA WEB-->
+<section id="id-006">
+
+    <h2>A continuación..</h2> <!-- Título de la sección -->
+      <div class="productos-container"> <!-- Contenedor de los productos -->
+        <section id="id-006">
+            <h2>Nuestros Productos!</h2>
+            <div class="productos-container">
+              <div class="producto">
+                <img src="./producto1.webp" alt="Producto 1">
+                <p>Producto 1</p>
+                <button onclick="agregarAlCarrito({id: 1, nombre: 'Producto 1', precio: 3000})">Agregar al carrito</button>
+              </div>
+              <div class="producto">
+                <img src="./producto2.jpg" alt="Producto 2">
+                <p>Producto 2</p>
+                <button onclick="agregarAlCarrito({id: 2, nombre: 'Producto 2', precio: 2500})">Agregar al carrito</button>
+              </div>
+              <div class="producto">
+                <img src="./producto3.jpg" alt="Producto 3">
+                <p>Producto 3</p>
+                <button onclick="agregarAlCarrito({id: 3, nombre: 'Producto 3', precio: 2200})">Agregar al carrito</button>
+              </div>
+            </div>
+          </section>
+          
+      </div>
+
+</section>
+
+<section id="carrito-section">
+    <h2>🛒 Tu carrito</h2>
+    <div id="carrito-contenedor"></div>
+    <button id="vaciar-carrito">Vaciar Carrito</button>
+  </section>
+  
+  <script src="./carrito.js"></script>
+  
+        
+    
+
+<section>
+
+    <article>
+        <p>Somos una marca que ofrece productos de alta calidad y precios muy competitivos. ¡No te quedes sin conocer todo lo que tenemos!</p>
+        <h2>HAUL de ropa de una de nuestras clientes!</h2>
+        <div>
+        <video controls poster="./Foto MayoyCiro.jpeg" width="600" height="338">
+            <source src="./Haul de Ropa.mp4  " type="video/mp4">
+            <track src ="./subtitulos.vtt" kind="subtitles" srclang="es"
+            label="Español" aria-setsize="5%" >
+            Tu navegador no soporta el video. 
+            
+
+        </video>
+        </div>
+     </article>
+
+</section>
+
+<section id="#Contacto01">
+<form action="https://formspree.io/f/mgvzebwr" method="POST">
+    <label for="Nombre">Nombre *</label>
+    <input type="text" name="Nombre" id="Nombre" required placeholder="Ej: María">
+  
+    <label for="email">Correo electrónico *</label>
+    <input type="email" name="email" id="email" required placeholder="ejemplo@correo.com">
+  
+    <label for="message">Mensaje</label>
+    <textarea name="message" id="message"></textarea>
+  
+    <label for="Opciones">Nacionalidad</label>
+    <select name="Opciones" id="Opciones">
+      <option value="Argentin@">Argentin@</option>
+      <option value="Norteamerican@">Norteamerican@</option>
+    </select>
+  
+    <label for="CodigoPostal">Código Postal</label>
+    <input type="password" name="CodigoPostal" id="CodigoPostal">
+  
+    <button type="submit">Enviar</button>
+  </form>
+
+</section>
+  
+    
+    </main>
+
+
+    <section id="reseñas" class="reseñas-section">
+        <h2>Reseñas de clientes</h2>
+        <div class="reseña">
+            <p>⭐⭐⭐⭐⭐</p>
+            <p>"Excelente servicio y muy profesional. ¡Volveré sin dudas!"</p>
+            <small>- Juan P.</small>
+        </div>
+        <div class="reseña">
+            <p>⭐⭐⭐⭐</p>
+            <p>"Muy buena atención, el lugar está impecable."</p>
+            <small>- María G.</small>
+        </div>
+    </section>
+    
+    
+    <footer>
+
+
+        <div id="id-003">
+        <nav>
+            <p id="id-001"> <img src="./whatsapp logo.png" width="1.3%" alt="Logo Whatsapp">Whatsapp<a href="https://api.whatsapp.com/send?phone=541168099220&text=Hola,%20necesito%20informaci%C3%B3n%20de%20tus%20productos." target="_blank" rel="noopener noreferrer"> <em>Click Acá</em></a></p>
+        </nav>
+        <nav>
+            <p id="id-001"><img src="./Logo Instagram.jpg" alt=" Logo Instagram" width="1% "> <em>Instagram</em> <a href="https://www.instagram.com/guk.indumentaria/" target="_blank" rel="noopener noreferrer"><em>Click Acá</em></a></p>
+            <p id="id-001"><img src="./imagan facebook.png" width="1%" alt="Logo Facebook"><em>Facebook</em><a href="https://www.facebook.com/profile.php?id=100055205114129" target="_blank" rel="noopener noreferrer"><em> Click Acá</em></a></p>
+            <p id="id-001"><img src="./Logo twitter.webp" width="2%" alt="Logo Twitter"><em>Twitter</em></p>
+        </nav>
+    </div>
+<div>
+    <a href="#id-005">Volver al inicio</a>
+</div>
+        
+        
+    </footer>
+
+    
+</body>
+</html>
