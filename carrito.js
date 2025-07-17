@@ -85,10 +85,14 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-const botonCompra = document.getElementById('comprar-btn');
-botonCompra?.addEventListener('click', () => {
-  vaciarCarrito(); 
-  setTimeout(() => {
-    window.location.hash = '#id-005';
-  }, 200); // un retraso de ms para darle tiempo al refresh de la website
+document.addEventListener("DOMContentLoaded", () => {
+  const botonCompra = document.getElementById('comprar-btn');
+  if (botonCompra) {
+    botonCompra.addEventListener('click', () => {
+      vaciarCarrito(); // Vacía el carrito de compritas
+      setTimeout(() => {
+        window.location.hash = '#id-005';
+      }, 200);
+    });
+  }
 });
