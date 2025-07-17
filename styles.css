@@ -412,3 +412,21 @@ agrupas en estilos las clases y lo podes reutilizar para configurarlo*/
     height: auto;
   }
 }
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Proporción 16:9 (altura / ancho = 9/16 = 0.5625) */
+    height: 0;
+    overflow: hidden;
+    background-color: #000; /* Fondo negro por si no hay video */
+    margin-bottom: 20px;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
